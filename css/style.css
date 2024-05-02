@@ -1,0 +1,23 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.my_aside {
+    height: calc(100vh - 60px);
+}
+
+.ciao {
+    height: calc(100vh - 60px);
+    width: calc(100% - 60px);
+}
+
+.logo {
+    width: 50px;
+}
+
+.my_aside {
+    background-image: url(../img/sidebar-bg.png);
+}
