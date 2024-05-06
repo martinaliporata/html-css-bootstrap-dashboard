@@ -16,21 +16,30 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between" style="height: 70px;">
-                        <a class="navbar-brand" href="#">
-                            <img class="logo" src="img/mobile-logo.png" alt="">
-                        </a>
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                        </form>
-                        <div class="dropdown show">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa-solid fa-bell"></i>
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand">
+                                <img class="logo" src="img/mobile-logo.png" alt="">
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Profilo</a>
-                                <a class="dropdown-item" href="#">Fatturazione</a>
-                                <a class="dropdown-item" href="#">Logout</a>
+                            <form class="d-flex col">
+                                <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                            </form>
+                            <div class="dropdown">
+                                <div class="d-flex">
+                                    <div class="custom-class me-3">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <i class="fa-solid fa-circle-question"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bell"></i>
+                                    </button>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazioen</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
                             </div>
                         </div>
                     </nav>
@@ -41,14 +50,26 @@
 
     <main>
         <section class="d-flex">
-            <div class="my_aside position-relative" style="width: 60px; background-color:#051e33">
+            <div class="my_aside position-relative" style="background-color:#051e33">
                 <div class="d-flex flex-column align-items-center text-white pt-4">
-                    <i class="mb-3 fa-solid fa-house"></i>
-                    <i class="mb-3 fa-solid fa-chart-simple"></i>
-                    <i class="mb-3 fa-solid fa-signal"></i>
+                    <div class="d-flex">
+                        <i class="mb-3 fa-solid fa-house"></i>
+                        <p class="custom-class">Home</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="mb-3 fa-solid fa-chart-simple"></i>
+                        <p class="custom-class">Stats</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="mb-3 fa-solid fa-signal"></i>
+                        <p class="custom-class">Signals</p>
+                    </div>
                 </div>
                 <div class="text-white position-absolute bottom-0 end-50">
-                    <i class="mb-3 fa-solid fa-gear"></i>
+                    <div class="d-flex">
+                        <i class="mb-3 fa-solid fa-gear"></i>
+                        <p class="custom-class">Admin</p>
+                    </div>
                 </div>
             </div>
             <div class="ciao d-flex flex-column overflow-auto">
@@ -64,12 +85,29 @@
                                         <button class="border border-white border-1 btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                             <i class="fa-solid fa-plus"></i>
                                         </button>
+                                        <!-- <div class="dropdown-menu">
+                                            <form class="px-4 py-3">
+                                                <div class="form-group">
+                                                    <label for="exampleDropdownFormEmail1">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleDropdownFormPassword1">Password</label>
+                                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                    <label class="form-check-label" for="dropdownCheck">
+                                                    Remember me
+                                                    </label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                            </form>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                            <a class="dropdown-item" href="#">Forgot password?</a>
+                                        </div> -->
                                     </p>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="d-flex align-items-baseline">
                                     <h2 class="pe-4">
@@ -104,54 +142,72 @@
                             <div class="col-12">
                                 <h2 style="background-color: #f7f7f7;">
                                     Prossime classi
-                                </h2>
-                                <table class="mb-4 border">
+                                </h2>                            
+                                <table class="table">
                                     <thead>
-                                        <tr class="border border-bottom-1 border-light">
-                                            <th class="pt-4">Nome</th>
-                                            <th class="pt-4">Stato</th>
-                                            <th class="pt-4">Azioni</th>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Data Inizio</th>
+                                            <th scope="col" class="custom-class">ROI</th>
+                                            <th scope="col" class="custom-class">Stato</th>
+                                            <th scope="col">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="border border-bottom-1 border-light">
+                                        <tr>
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 75</td>
-                                            <td class="pe-5">Done</td>
+                                            <td class="pe-5">15 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Done</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr class="border border-bottom-1 border-light">
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 76</td>
-                                            <td class="pe-5">Done</td>
+                                            <td class="pe-5">16 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Done</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr class="border border-bottom-1 border-light">
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 77</td>
-                                            <td class="pe-5">Process</td>
+                                            <td class="pe-5">17 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Process</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr class="border border-bottom-1 border-light">
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 78</td>
-                                            <td class="pe-5">Done</td>
+                                            <td class="pe-5">18 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Done</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr class="border border-bottom-1 border-light">
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 79</td>
-                                            <td class="pe-5">Failed</td>
+                                            <td class="pe-5">19 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Failed</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr class="border border-bottom-1 border-light">
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 80</td>
-                                            <td class="pe-5">Done</td>
+                                            <td class="pe-5">20 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Done</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr class="border border-bottom-1 border-light">
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 81</td>
-                                            <td class="pe-5">Failed</td>
+                                            <td class="pe-5">21 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Failed</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                         <tr class="border border-bottom-1 border-light">
                                             <td class="pe-5"><i class="fa-solid fa-chevron-left"></i><span>&#47;</span><i class="fa-solid fa-chevron-right"></i>Classe 82</td>
-                                            <td class="pe-5">Done</td>
+                                            <td class="pe-5">22 Feb 2021</td>
+                                            <td class="pe-5 custom-class">20 &percnt;</td>
+                                            <td class="pe-5 custom-class">Done</td>
                                             <td class="pe-5"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                         </tr>
                                     </tbody>

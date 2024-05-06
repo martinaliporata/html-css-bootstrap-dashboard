@@ -20,4 +20,20 @@ body {
 
 .my_aside {
     background-image: url(../img/sidebar-bg.png);
+    width: 60px;
+}
+
+.custom-class {
+    display: none;
+}
+
+
+@media screen and (min-width:768px) {
+    .my_aside {
+        width: 100px;
+    }
+
+    .custom-class {
+        display: block;
+    }
 }
