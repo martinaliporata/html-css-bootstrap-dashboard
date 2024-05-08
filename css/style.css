@@ -1,8 +1,16 @@
-body {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-style: normal;
+}
+
+.border-prova {
+    border: solid 1px grey;
+}
+
+.my_icon-pink {
+    width: 25px;
+    margin-right: 10px;
 }
 
 .my_aside {
@@ -27,6 +35,14 @@ body {
     display: none;
 }
 
+.logo-big {
+    display: none;
+}
+
+#my_canvas-students {
+    width: 40%;
+}
+
 
 @media screen and (min-width:768px) {
     .my_aside {
@@ -35,5 +51,25 @@ body {
 
     .custom-class {
         display: block;
+    }
+
+    .logo-big {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .logo-small {
+        display: none;
+    }
+
+    .logo-big {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #my_canvas-students {
+        width: 100%;
     }
 }
