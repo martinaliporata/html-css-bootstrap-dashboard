@@ -15,6 +15,8 @@
 
 .my_aside {
     height: calc(100vh - 60px);
+    background-image: url(../img/sidebar-bg.png);
+    width: 60px;
 }
 
 .my_main-measures {
@@ -26,11 +28,6 @@
     width: 50px;
 }
 
-.my_aside {
-    background-image: url(../img/sidebar-bg.png);
-    width: 60px;
-}
-
 .custom-class {
     display: none;
 }
@@ -40,7 +37,11 @@
 }
 
 #my_canvas-students {
-    width: 40%;
+    width: 45%;
+}
+
+input.my_inputs {
+    width: 100%;
 }
 
 
@@ -56,6 +57,10 @@
     .logo-big {
         display: none;
     }
+/* 
+    input.my_inputs {
+        width: 50%;
+    } */
 }
 
 @media screen and (min-width:992px) {

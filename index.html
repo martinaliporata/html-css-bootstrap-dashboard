@@ -73,150 +73,156 @@
                 </div>
             </div>
             <div class="my_main-measures d-flex flex-column overflow-auto">
-                <div class="my_header">
-                    <div class="container-fluid g-0">
-                        <div class="row text-white g-0">
-                            <div class="col-12 col-md-4 order-md-2 col-lg-3 mb-4">
-                                <div class="d-flex align-items-center pt-4" style="background-color: #1c71e8;">
-                                        <p class="pe-4">
-                                            Nuovo studente
-                                        </p>
-                                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#my_canvas-students" role="button" aria-controls="my_canvas-students">
-                                            <i class="fa-solid fa-plus fs-1"></i>
-                                        </a>
-                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="my_canvas-students" aria-labelledby="offcanvasExampleLabel">
-                                        <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="my_canvas-students">Inserisci un nuovo studente</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            <form action="">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-6">
+                <div class="container-fluid">
+                    <div class="row text-white">
+                        <div class="col-12 col-md-4 order-md-2 col-lg-3 g-0">
+                            <div class="d-flex align-items-center" style="background-color: #1c71e8;">
+                                <p class="pe-4">
+                                    Nuovo studente
+                                </p>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#my_canvas-students" role="button" aria-controls="my_canvas-students">
+                                    <i class="fa-solid fa-plus fs-1"></i>
+                                </a>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="my_canvas-students" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h6 class="offcanvas-title" id="my_canvas-students">Inserisci un nuovo studente</h6>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form action="">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="d-md-flex">
+                                                        <div>
                                                             <label for="Nome">Nome</label>
-                                                            <input type="text" name="Nome" id="Name">
+                                                            <input class="my_inputs" type="text" name="Nome" id="Name">
                                                         </div>
-                                                        <div class="col-12 col-md-6">
+                                                        <div>
                                                             <label for="Cognome">Cognome</label>
-                                                            <input type="text" name="Cognome" id="Cognome">
+                                                            <input class="my_inputs" type="text" name="Cognome" id="Cognome">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <label for="Email1">Email</label>
-                                                        <input type="email" name="Email" id="Email1">
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <label for="password">Password</label>
-                                                        <input type="password" id="password">
+                                                    <div class="d-md-flex">
+                                                        <div>
+                                                            <label for="Email1">Email</label>
+                                                            <input class="my_inputs" type="email" name="Email" id="Email1">
+                                                        </div>
+                                                        <div>
+                                                            <label for="password">Password</label>
+                                                            <input class="my_inputs" type="password" id="password">
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <label for="Email2">Indirizzo email</label>
-                                                        <input type="email" name="Email" id="Email2">
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <label for="password">Password</label>
-                                                        <input type="password">
+                                                    <div class="d-md-flex">
+                                                        <div>
+                                                            <label for="Email2">Indirizzo email</label>
+                                                            <input class="my_inputs" type="email" name="Email" id="Email2">
+                                                        </div>
+                                                        <div>
+                                                            <label for="password">Password</label>
+                                                            <input class="my_inputs" type="password">
+                                                        </div>
                                                     </div>
                                                 </div>                                           
                                                 <div class="row">
-                                                    <div class="col-12">
+                                                    <div>
                                                         <label for="Indirizzo">Indirizzo</label>
-                                                        <input type="text" name="Indirizzo" id="Indirizzo">        
+                                                        <input class="my_inputs" type="text" name="Indirizzo" id="Indirizzo">        
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-lg-6">
-                                                        <label for="Città">Città</label>
-                                                        <input type="text" name="Città" id="Città">
-                                                    </div>
-                                                    <div class="col-12 col-lg-3">
-                                                        <div class="input-group mb-3">
-                                                            <label for="Stato">Stato</label>
-                                                            <select class="form-select" id="Stato">
-                                                                <option selected>Choose...</option>
-                                                                <option value="1">Italy</option>
-                                                                <option value="2">Spain</option>
-                                                                <option value="3">France</option>
-                                                            </select>
+                                                    <div class="d-md-flex">
+                                                        <div>
+                                                            <label for="Città">Città</label>
+                                                            <input class="my_inputs" type="text" name="Città" id="Città">
+                                                        </div>
+                                                        <div>
+                                                            <div class="my_inputs input-group mb-3">
+                                                                <label for="Stato">Stato</label>
+                                                                <select class="form-select" id="Stato">
+                                                                    <option selected>Choose...</option>
+                                                                    <option value="1">Italy</option>
+                                                                    <option value="2">Spain</option>
+                                                                    <option value="3">France</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <label for="cap">CAP</label>
+                                                            <input class="my_inputs" type="text" name="cap" id="cap">
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-lg-3">
-                                                        <label for="cap">CAP</label>
-                                                        <input type="text" name="cap" id="cap">
-                                                    </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12">
+                                                    <div>
                                                         <label for="foto">Foto</label>
-                                                        <input type="file" id="foto">
+                                                        <input class="my_inputs" type="file" id="foto">
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12">
+                                                    <div>
                                                         <label for="Seleziona">Seleziona per proseguire</label>
-                                                        <input type="radio" name="Accept" id="Seleziona" placeholder="Seleziona per proseguire">
+                                                        <input class="my_inputs" type="radio" name="Accept" id="Seleziona" placeholder="Seleziona per proseguire">
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12">
-                                                        <button>Salva</button>
+                                                    <div class="d-md-flex">
+                                                        <button class="my_inputs">Salva</button>
                                                         <button>Svuota</button>
                                                     </div>
                                                 </div>
-                                            </form>
-                                        </div>    
-                                    </div>
+                                            </div>
+                                        </form>
+                                    </div> 
+                                </div> 
+                            </div>  
+                        </div>
+                        <div class="col-12 col-md-4 order-md-0 col-lg-6 g-0">
+                            <div style="background-color: #1c71e8;">
+                                <div class="d-flex align-items-baseline">
+                                    <h2 class="pe-4 p-1">
+                                        Boolean
+                                    </h2>
+                                    <p class="rounded-pill p-1" style="background-color: #165bba;">
+                                        Piano Blaze
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-4 order-md-0 col-lg-6 g-0">
-                                <div class="pb-2" style="background-color: #1c71e8;">
-                                    <div class="d-flex align-items-baseline">
-                                        <h2 class="pe-4 p-1">
-                                            Boolean
-                                        </h2>
-                                        <p class="rounded-pill p-1" style="background-color: #165bba;">
-                                            Piano Blaze
-                                        </p>
-                                    </div>
-                                    <div class="d-flex align-items-baseline">
-                                        <p class="rounded-pill me-2 p-1" style="background-color: #165bba;">
-                                            3 app
-                                        </p>
-                                        <i class="me-2 fa-solid fa-angles-right"></i>
-                                        <i class="fa-solid fa-plus d-lg-none p-1 me-2 rounded-circle" style="background-color: #165bba;"></i>
-                                        <div>
-                                            <p class="logo-big rounded-pill me-2 p-1" style="background-color: #165bba;">
-                                                Boolean mobile app
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="logo-big rounded-pill me-2 p-1" style="background-color: #165bba;">
-                                                Boolean web app
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="logo-big rounded-pill me-2 p-1" style="background-color: #165bba;">
-                                                Boolean blog app
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4 order-md-1 col-lg-3 g-0">
-                                <div class="pb-2" style="background-color: #1c71e8;">
+                                <div class="d-flex align-items-baseline">
+                                    <p class="rounded-pill me-2 p-1" style="background-color: #165bba;">
+                                        3 app
+                                    </p>
+                                    <i class="me-2 fa-solid fa-angles-right"></i>
+                                    <i class="fa-solid fa-plus d-lg-none p-1 me-2 rounded-circle" style="background-color: #165bba;"></i>
                                     <div>
-                                        <p>
-                                            Studenti online negli ultimi 30 minuti
+                                        <p class="logo-big rounded-pill me-2 p-1" style="background-color: #165bba;">
+                                            Boolean mobile app
                                         </p>
-                                        <h2>
-                                            125
-                                        </h2>
                                     </div>
+                                    <div>
+                                        <p class="logo-big rounded-pill me-2 p-1" style="background-color: #165bba;">
+                                            Boolean web app
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="logo-big rounded-pill me-2 p-1" style="background-color: #165bba;">
+                                            Boolean blog app
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 order-md-1 col-lg-3 g-0">
+                            <div style="background-color: #1c71e8;">
+                                <div>
+                                    <p>
+                                        Studenti online negli ultimi 30 minuti
+                                    </p>
+                                    <h2>
+                                        125
+                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +246,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr class="border border-bottom-1 border-light">
                                         <td class="w-50"><img class="my_icon-pink" src="img/class-avatar.jpg" alt="">Classe 75</td>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-md-table-cell">20 &percnt;</td>
